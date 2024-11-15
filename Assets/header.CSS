@@ -3,22 +3,34 @@ header {
    justify-content: center;
    background-color: #17abb3;
    color: #ffffff;
+   padding : 20px 50px;
 }
 
 .profile-content {
     display: flex;
+    flex-direction:row;
     align-items: center;
     max-width: 1160px;
     width: 100%;
 }
 
 .profile-picture {
-    margin-left : 20px;
+    margin-right : 20px;
 }
 
 .profile-picture img{
     width : 120px;
-    height: 120px;
+    height: 110px;
     border: solid 4px #ffffff;
     border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 20px
+}
+
+.subtitle {
+    color : #ffffff;
+}
+
+.profile-info {
+   flex : 1;
 }

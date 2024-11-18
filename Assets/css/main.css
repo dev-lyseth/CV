@@ -42,16 +42,16 @@ main h2 {
 }
 
 .language-skills {
-    display : flex;
+    display: flex;
     flex-direction: column;
-    
+
 }
 
 .language-item {
-    display : flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin : 5px 0;
+    margin: 5px 0;
     font-size: 1rem;
 }
 
@@ -61,11 +61,15 @@ main h2 {
 }
 
 ul {
-   padding-left: 15px;
-   list-style-type: square;
+    padding-left: 15px;
+    list-style-type: square;
 }
 
-
-li::marker { 
+li::marker {
     color: #17abb3;
+}
+
+.profile-text p {
+    text-indent: 50px;
+    text-align: justify;
 }

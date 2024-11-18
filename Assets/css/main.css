@@ -41,6 +41,31 @@ main h2 {
     justify-content: space-between;
 }
 
+.language-skills {
+    display : flex;
+    flex-direction: column;
+    
+}
+
+.language-item {
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin : 5px 0;
+    font-size: 1rem;
+}
+
 .bold {
     font-weight: bold;
+    font-size: 0.9rem;
+}
+
+ul {
+   padding-left: 15px;
+   list-style-type: square;
+}
+
+
+li::marker { 
+    color: #17abb3;
 }

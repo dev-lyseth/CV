@@ -7,14 +7,14 @@ header {
 
 .header-left {
     height: 100%;
-    width: 40%;
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .header-right {
     height: 100%;
-    width: 60%;
+    width: 70%;
     padding: 2rem;
 }
 .profile-content {
@@ -27,8 +27,8 @@ header {
 }
 
 .profile-picture {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border : solid 4px #ffffff;
     border-radius: 50%;
     overflow : hidden;

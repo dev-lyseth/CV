@@ -8,15 +8,16 @@
         content="Ce projet CV en ligne est développé dans le cadre de ma formation de Développeur Web et Web Mobile. 
     Cet exercice a pour objectif de mettre en pratique mes compétences en HTML et CSS pour créer une page structurée selon un modèle prédéfini.">
     <title>CV de Lise Massias</title>
-    <link rel="stylesheet" href="./assets/global.css">
-    <link rel="stylesheet" href="./assets/header.css">
-    <link rel="stylesheet" href="./assets/footer.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="icon" href="./assets/icons/cv-favicon.png" type="img/png">
 </head>
 
 <body>
     <div class="cv-container">
-        <header class="profile-header">
+        <header>
             <div class="profile-content">
                 <div class="header-left">
                     <div class="profile-picture">
@@ -52,232 +53,263 @@
             </div>
         </header>
         <main>
+           
             <!--bloc colonne gauche-->
-            <section id="skills">
-                <h2>Compétences</h2>
-                <hr>
-                <div>HTML</div>
-                <div class="HTML-skills">
-                    <img class="star-solid" src="./assets/icons/star-solid.svg" alt="star solid icon">
-                    <img class="star-solid" src="./assets/icons/star-solid.svg" alt="star solid icon">
-                    <img class="star-solid" src="./assets/icons/star-solid.svg" alt="star solid icon">
-                    <img class="star-solid" src="./assets/icons/star-solid.svg" alt="star solid icon">
-                    <img class="star-regular" src="./assets/icons/star-regular.svg" alt="star regular icon">
-                </div>
-                <div>CSS</div>
-                <div class="CSS-skills">
-                    <img class="star-solid" src="./assets/icons/star-solid.svg" alt="star solid icon">
-                    <img class="star-solid" src="./assets/icons/star-solid.svg" alt="star solid icon">
-                    <img class="star-solid" src="./assets/icons/star-solid.svg" alt="star solid icon">
-                    <img class="star-solid" src="./assets/icons/star-solid.svg" alt="star solid icon">
-                    <img class="star-regular" src="./assets/icons/star-regular.svg" alt="star regular icon">
-                </div>
-                <div>Javascript</div>
-                <div class="javascript-skills">
-                    <img class="star-regular" src="./assets/icons/star-regular.svg" alt="star regular icon">
-                    <img class="star-regular" src="./assets/icons/star-regular.svg" alt="star regular icon">
-                    <img class="star-regular" src="./assets/icons/star-regular.svg" alt="star regular icon">
-                    <img class="star-regular" src="./assets/icons/star-regular.svg" alt="star regular icon">
-                    <img class="star-regular" src="./assets/icons/star-regular.svg" alt="star regular icon">
-                </div>
-                <div>PHP</div>
-                <div class="PHP-skills">
-                    <img class="star-regular" src="./assets/icons/star-regular.svg" alt="star regular icon">
-                    <img class="star-regular" src="./assets/icons/star-regular.svg" alt="star regular icon">
-                    <img class="star-regular" src="./assets/icons/star-regular.svg" alt="star regular icon">
-                    <img class="star-regular" src="./assets/icons/star-regular.svg" alt="star regular icon">
-                    <img class="star-regular" src="./assets/icons/star-regular.svg" alt="star regular icon">
-            </section>
-            <section id="languages">
-                <h2>Langues</h2>
-                <hr>
-                <div class="languages-list">
-                    <div class="language-item">
-                        <span>Français</span>
-                        <span>Langue maternelle</span>
-                    </div>
-                    <div class="language-item">
-                        <span>Anglais</span>
-                        <span>Professionnel</span>
-                    </div>
-                    <div class="language-item">
-                        <span>Allemand</span>
-                        <span>Notions</span>
-                    </div>
-                </div>
-            </section>
-            <section id="qualities">
-                <h2>Qualités</h2>
-                <hr>
-                <ul class="qualities-list">
-                    <li>Esprit d'équipe</li>
-                    <li>Empathie et écoute active</li>
-                    <li>Autonomie et organisation</li>
-                    <li>Capacité d'adaptation</li>
-                </ul>
-            </section>
-            <section id="interests">
-                <h2>Centres d'intérêt</h2>
-                <hr>
-                <ul class="interests-list">
-                    <li>Karaté</li>
-                    <li>Innovation numérique</li>
-                    <li>Technologies d'assistance</li>
-                    <li>Association Pause aux Filaos</li>
-                </ul>
-            </section>
-            <!--bloc colonne droite-->
-            <section id="profile">
-                <h2>Profil</h2>
-                <hr>
-                <p>Initialement diplômée en Ergothérapie avec une pratique libérale de 10 ans, passionnée par
-                    l’amélioration
-                    de la qualité de vie et l’autonomie
-                    des personnes, j’ai acquis une expertise approfondie en créant des solutions personnalisées pour mes
-                    patients.
-                    Mon parcours m'a permis de développer des compétences clés en écoute active, résolution de
-                    problèmes,
-                    gestion de projets et collaboration interdisciplinaire, compétences qui trouvent une résonance
-                    directe
-                    dans le domaine du développement web. Depuis toujours, j'ai cherché à optimiser mon travail en
-                    libéral
-                    avec des outils d'automatisation, mais il me manquait les compétences techniques.<br>
-                    Ma passion pour la technologie m'amène aujourd'hui vers le développement web, où je peux allier
-                    créativité, rigueur et innovation.
-                    Motivée par l'apprentissage continu, je suis déterminée à transférer mes compétences analytiques et
-                    ma
-                    capacité à résoudre des problèmes complexes vers la création de solutions numériques fonctionnelles
-                    et
-                    efficaces.</p>
+           <div class="left-column">
+            
+                <section>
+                    <h2>Compétences</h2>
+                    <hr>
 
-            </section>
-            <section id="education">
-                <h2>Formations</h2>
-                <hr>
-                <article class="education-entry">
-                    <div class="education-title">
-                        <h3>Titre Professionnel Développeur Web et Web Mobile</h3>
-                        <p>Centre Européen de Formation</p>
+
+                    <div class="skills">
+                        <div class="core-skills">
+                            <span class="bold">HTML</span>
+                            <div>
+                                <img class="star" src="./assets/icons/star-solid.svg" alt="star solid icon">
+                                <img class="star" src="./assets/icons/star-solid.svg" alt="star solid icon">
+                                <img class="star" src="./assets/icons/star-solid.svg" alt="star solid icon">
+                                <img class="star" src="./assets/icons/star-solid.svg" alt="star solid icon">
+                                <img class="star" src="./assets/icons/star-regular.svg" alt="star regular icon">
+                            </div>
+                        </div>
+    
+                        <div class="core-skills">
+                            <span class="bold">CSS</span>
+                            <div>
+                                <img class="star" src="./assets/icons/star-solid.svg" alt="star solid icon">
+                                <img class="star" src="./assets/icons/star-solid.svg" alt="star solid icon">
+                                <img class="star" src="./assets/icons/star-solid.svg" alt="star solid icon">
+                                <img class="star" src="./assets/icons/star-solid.svg" alt="star solid icon">
+                                <img class="star" src="./assets/icons/star-regular.svg" alt="star regular icon">
+                            </div>
+                        </div>
+    
+                        <div class="core-skills">
+                            <span class="bold">Javascript</span>
+                            <div>
+                                <img class="star" src="./assets/icons/star-regular.svg" alt="star regular icon">
+                                <img class="star" src="./assets/icons/star-regular.svg" alt="star regular icon">
+                                <img class="star" src="./assets/icons/star-regular.svg" alt="star regular icon">
+                                <img class="star" src="./assets/icons/star-regular.svg" alt="star regular icon">
+                                <img class="star" src="./assets/icons/star-regular.svg" alt="star regular icon">
+                            </div>
+                        </div>
+    
+                        <div class="core-skills">
+                            <span class="bold">PHP</span>
+                            <div>
+                                <img class="star" src="./assets/icons/star-regular.svg" alt="star regular icon">
+                                <img class="star" src="./assets/icons/star-regular.svg" alt="star regular icon">
+                                <img class="star" src="./assets/icons/star-regular.svg" alt="star regular icon">
+                                <img class="star" src="./assets/icons/star-regular.svg" alt="star regular icon">
+                                <img class="star" src="./assets/icons/star-regular.svg" alt="star regular icon">
+                            </div>
+                        </div>
                     </div>
-                    <div class="education-date">
-                        <time datetime="2025">2024/2025</time>
+
+                </section>
+
+
+                <section>
+                    <h2>Langues</h2>
+                    <hr>
+                    <div class="languages-list">
+                        <div class="language-item">
+                            <span class="bold">Français</span>
+                            <span>Langue maternelle</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="bold">Anglais</span>
+                            <span>Professionnel</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="bold">Allemand</span>
+                            <span>Notions</span>
+                        </div>
                     </div>
-                </article>
-                <article class="education-entry">
-                    <div class="education-title">
-                        <h3>L'écriture et l’ergothérapie : méthodologies d'évaluation et d'intervention et moyens de
-                            compensations informatiques</h3>
-                        <p>Académie JCSI</p>
-                    </div>
-                    <div class="education-date">
-                        <time datetime="2022">2022</time>
-                    </div>
-                </article>
-                <article class="education-entry">
-                    <div class="education-title">
-                        <h3>Planification de projet en médiation animale</h3>
-                        <p>Les entrepreneurs animaliers</p>
-                    </div>
-                    <div class="education-date">
-                        <time datetime="2021">2021</time>
-                    </div>
-                </article>
-                <article class="education-entry">
-                    <div class="education-title">
-                        <h3>Education Thérapeutique du Patient</h3>
-                        <p>AGO Formations</p>
-                    </div>
-                    <div class="education-date">
-                        <time datetime="2018">2018</time>
-                    </div>
-                </article>
-                <article class="education-entry">
-                    <div class="education-title">
-                        <h3>Diplôme d'Etat - Ergothérapeute</h3>
-                        <p>Haute Ecole Libre de Bruxelles</p>
-                    </div>
-                    <div class="education-date">
-                        <time datetime="2015">2015</time>
-                    </div>
-                </article>
-                <article class="education-entry">
-                    <div class="education-title">
-                        <h3>Baccalauréat S</h3>
-                        <p>Lycée d'Arsonval, Brive-la-Gaillarde</p>
-                    </div>
-                    <div class="education-date">
-                        <time datetime="2010">2010</time>
-                    </div>
-                </article>
-            </section>
-            <section id="internship">
-                <h2>Stages</h2>
-                <hr>
-                <article class="internship-entry">
-                    <div class="intership-title">
-                        <h3>Ergothérapie : Service de revalidation cardio-pulmonaire</h3>
-                        <p>Conception de programmes, gestion de projet et structuration, Hôpital J.Bracops Bruxelles</p>
-                    </div>
-                    <div class="internship-date">
-                        <time datetime="2014">Janvier 2014 - Mai 2014</time>
-                    </div>
-                </article>
-                <article class="internship-entry">
-                    <div class="intership-title">
-                        <h3>Ergothérapie : École Ados PILIFS (adolescents autistes)</h3>
-                        <p>Adaptations aux besoins spécifiques, Bruxelles</p>
-                    </div>
-                    <div class="internship-date">
-                        <time datetime="2015">Janvier 2015 - Avril 2015</time>
-                    </div>
-                </article>
-            </section>
-            <section id="work-experience">
-                <h2>Expérience professionnelle</h2>
-                <hr>
-                <article class="work-experience-entry">
-                    <div class="work-experience-title">
-                        <h3>collaboration Neurobase : Supervisions, interface logiciel</h3>
-                        <p>Neurobase freelance</p>
-                    </div>
-                    <div class="work-experience-date">
-                        <time datetime="2023">Septembre 2023</time> - <time datetime="2024">Février 2024</time>
-                    </div>
-                </article>
-                <article class="work-experience-entry">
-                    <div class="work-experience-title">
-                        <h3>Adaptation et accessibilité numérique : Aménagements numériques, intégration de solutions
-                            pour
-                            enfants TND.</h3>
-                        <p>Cabinet libéral d'ergothérapie</p>
-                    </div>
-                    <div class="work-experience-date">
-                        <time datetime="2015">2015</time> - <span><strong>present</strong></span>
-                    </div>
-                </article>
-                <article class="work-experience-entry">
-                    <div class="work-experience-title">
-                        <h3>Gestion de projet et collaboration : Missions partenaires, coordination avec APF France
-                            Handicap
-                        </h3>
-                        <p>Cabinet libéral d'ergothérapie</p>
-                    </div>
-                    <div class="work-experience-date">
-                        <time datetime="2015">2015</time> - <time datetime="2024">2024</time>
-                    </div>
-                </article>
-                <article class="work-experience-entry">
-                    <div class="work-experience-title">
-                        <h3>Conception UX et optimisation de l’environnement : diagnostics d’autonomie habitat, conseils
-                            en
-                            domotique pour personnes âgées</h3>
-                        <p>Cabinet libéral d'ergothérapie</p>
-                    </div>
-                    <div class="work-experience-date">
-                        <time datetime="2015">2015</time> - <span><strong>present</strong></span>
-                    </div>
-                </article>
-            </section>
+                </section>
+
+
+                <section>
+                    <h2>Qualités</h2>
+                    <hr>
+                    <ul class="qualities-list">
+                        <li>Esprit d'équipe</li>
+                        <li>Empathie et écoute active</li>
+                        <li>Autonomie et organisation</li>
+                        <li>Capacité d'adaptation</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Centres d'intérêt</h2>
+                    <hr>
+                    <ul class="interests-list">
+                        <li>Karaté</li>
+                        <li>Innovation numérique</li>
+                        <li>Technologies d'assistance</li>
+                        <li>Association Pause aux Filaos</li>
+                    </ul>
+                </section>
+           </div>
+            
+           
+           
+           <!--bloc colonne droite-->
+            <div class="right-column">
+                <section class="profile">
+                    <h2>Profil</h2>
+                    <hr>
+                    <p>Initialement diplômée en Ergothérapie avec une pratique libérale de 10 ans, passionnée par
+                        l’amélioration
+                        de la qualité de vie et l’autonomie
+                        des personnes, j’ai acquis une expertise approfondie en créant des solutions personnalisées pour mes
+                        patients.
+                        Mon parcours m'a permis de développer des compétences clés en écoute active, résolution de
+                        problèmes,
+                        gestion de projets et collaboration interdisciplinaire, compétences qui trouvent une résonance
+                        directe
+                        dans le domaine du développement web. Depuis toujours, j'ai cherché à optimiser mon travail en
+                        libéral
+                        avec des outils d'automatisation, mais il me manquait les compétences techniques.<br>
+                        Ma passion pour la technologie m'amène aujourd'hui vers le développement web, où je peux allier
+                        créativité, rigueur et innovation.
+                        Motivée par l'apprentissage continu, je suis déterminée à transférer mes compétences analytiques et
+                        ma
+                        capacité à résoudre des problèmes complexes vers la création de solutions numériques fonctionnelles
+                        et
+                        efficaces.</p>
+    
+                </section>
+                <section id="education">
+                    <h2>Formations</h2>
+                    <hr>
+                    <article class="education-entry">
+                        <div class="education-title">
+                            <h3>Titre Professionnel Développeur Web et Web Mobile</h3>
+                            <p>Centre Européen de Formation</p>
+                        </div>
+                        <div class="education-date">
+                            <time datetime="2025">2024/2025</time>
+                        </div>
+                    </article>
+                    <article class="education-entry">
+                        <div class="education-title">
+                            <h3>L'écriture et l’ergothérapie : méthodologies d'évaluation et d'intervention et moyens de
+                                compensations informatiques</h3>
+                            <p>Académie JCSI</p>
+                        </div>
+                        <div class="education-date">
+                            <time datetime="2022">2022</time>
+                        </div>
+                    </article>
+                    <article class="education-entry">
+                        <div class="education-title">
+                            <h3>Planification de projet en médiation animale</h3>
+                            <p>Les entrepreneurs animaliers</p>
+                        </div>
+                        <div class="education-date">
+                            <time datetime="2021">2021</time>
+                        </div>
+                    </article>
+                    <article class="education-entry">
+                        <div class="education-title">
+                            <h3>Education Thérapeutique du Patient</h3>
+                            <p>AGO Formations</p>
+                        </div>
+                        <div class="education-date">
+                            <time datetime="2018">2018</time>
+                        </div>
+                    </article>
+                    <article class="education-entry">
+                        <div class="education-title">
+                            <h3>Diplôme d'Etat - Ergothérapeute</h3>
+                            <p>Haute Ecole Libre de Bruxelles</p>
+                        </div>
+                        <div class="education-date">
+                            <time datetime="2015">2015</time>
+                        </div>
+                    </article>
+                    <article class="education-entry">
+                        <div class="education-title">
+                            <h3>Baccalauréat S</h3>
+                            <p>Lycée d'Arsonval, Brive-la-Gaillarde</p>
+                        </div>
+                        <div class="education-date">
+                            <time datetime="2010">2010</time>
+                        </div>
+                    </article>
+                </section>
+                <section id="internship">
+                    <h2>Stages</h2>
+                    <hr>
+                    <article class="internship-entry">
+                        <div class="intership-title">
+                            <h3>Ergothérapie : Service de revalidation cardio-pulmonaire</h3>
+                            <p>Conception de programmes, gestion de projet et structuration, Hôpital J.Bracops Bruxelles</p>
+                        </div>
+                        <div class="internship-date">
+                            <time datetime="2014">Janvier 2014 - Mai 2014</time>
+                        </div>
+                    </article>
+                    <article class="internship-entry">
+                        <div class="intership-title">
+                            <h3>Ergothérapie : École Ados PILIFS (adolescents autistes)</h3>
+                            <p>Adaptations aux besoins spécifiques, Bruxelles</p>
+                        </div>
+                        <div class="internship-date">
+                            <time datetime="2015">Janvier 2015 - Avril 2015</time>
+                        </div>
+                    </article>
+                </section>
+                <section id="work-experience">
+                    <h2>Expérience professionnelle</h2>
+                    <hr>
+                    <article class="work-experience-entry">
+                        <div class="work-experience-title">
+                            <h3>collaboration Neurobase : Supervisions, interface logiciel</h3>
+                            <p>Neurobase freelance</p>
+                        </div>
+                        <div class="work-experience-date">
+                            <time datetime="2023">Septembre 2023</time> - <time datetime="2024">Février 2024</time>
+                        </div>
+                    </article>
+                    <article class="work-experience-entry">
+                        <div class="work-experience-title">
+                            <h3>Adaptation et accessibilité numérique : Aménagements numériques, intégration de solutions
+                                pour
+                                enfants TND.</h3>
+                            <p>Cabinet libéral d'ergothérapie</p>
+                        </div>
+                        <div class="work-experience-date">
+                            <time datetime="2015">2015</time> - <span><strong>present</strong></span>
+                        </div>
+                    </article>
+                    <article class="work-experience-entry">
+                        <div class="work-experience-title">
+                            <h3>Gestion de projet et collaboration : Missions partenaires, coordination avec APF France
+                                Handicap
+                            </h3>
+                            <p>Cabinet libéral d'ergothérapie</p>
+                        </div>
+                        <div class="work-experience-date">
+                            <time datetime="2015">2015</time> - <time datetime="2024">2024</time>
+                        </div>
+                    </article>
+                    <article class="work-experience-entry">
+                        <div class="work-experience-title">
+                            <h3>Conception UX et optimisation de l’environnement : diagnostics d’autonomie habitat, conseils
+                                en
+                                domotique pour personnes âgées</h3>
+                            <p>Cabinet libéral d'ergothérapie</p>
+                        </div>
+                        <div class="work-experience-date">
+                            <time datetime="2015">2015</time> - <span><strong>present</strong></span>
+                        </div>
+                    </article>
+                </section>
+            </div>
         </main>
         <footer>
             <div class="footer-container">

@@ -1,0 +1,46 @@
+main {
+    display: flex;
+    max-width: 1160px;
+    width: 100%;
+    background-color: #e3e3e3;
+}
+
+.left-column {
+    width: 30%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-column {
+    width: 70%;
+    height: 100%;
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main h2 {
+    margin-bottom: 2px;
+    font-weight: normal;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills .core-skills {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+    justify-content: space-between;
+}
+
+.bold {
+    font-weight: bold;
+}

@@ -82,7 +82,8 @@ li::marker {
     gap: 10px;
 }
 
-.education-entry {
+/* style identique pour les 3 parties formations, stages, experiences professionnelles" */
+.entry {
     display: flex;
     align-items: start;
     width: 100%;
@@ -91,27 +92,26 @@ li::marker {
     margin-top: 20px;
 }
 
-.education-title {
-    width: 70%;
-    height: 100%;
+.title {
+    width: 65%;
+    height : 100%;
     flex-wrap: wrap;
 }
-
-.education-date {
-    width: 30%;
-    height : 100%;
+.date {
+    width: 35%;
+    height: 100%;
     text-align: end;
 }
 
 h3 {
    margin: 0;
-   font-weight: bold; 
+   font-weight: 700; 
 }
 
-.education-title p {
+.title p{
     font-style: italic;
     margin : 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 } 
 
 time,
@@ -120,3 +120,4 @@ strong {
     font-weight: normal;
     font-size: 1.1rem;
 }
+

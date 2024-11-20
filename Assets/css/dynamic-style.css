@@ -1,13 +1,16 @@
-.entry.entry:hover{
+.entry.entry:hover {
     background-color: #e3e3e3;
     border-left: solid 5px #17abb3;
-    padding: 5px; /* padding ajouté pour respecter le rendu visuel de la capture écran */
+    /* padding ajouté pour respecter le rendu visuel de la capture écran */
+    padding: 5px;
 }
 
 .profile-picture img:hover {
     cursor: zoom-in;
+    /* changement du curseur pour signaler une interaction : ouverture en grand de l'image */
 }
 
 .social-icons img:hover {
-   opacity: 0.8;
+    opacity: 0.8;
+    /* réduction d'opacité au survol pour signaler une interaction */
 }

@@ -7,9 +7,13 @@ footer {
 
 .footer-container {
     display: flex;
-    flex-wrap: wrap;
-    width: 200px;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1160px;
+    width: auto;
+    /* s'adapte si ajout de réseau social */
+    justify-content: center;
+    gap: 10px;
 }
 
 .footer-container p {
@@ -22,6 +26,7 @@ footer {
     height: 30px;
     width: 30px;
     filter: invert(1);
+    /* rend les icônes visibles sur le fond vert, respecte le modèle initial */
     opacity: 1;
 }
 
@@ -32,5 +37,7 @@ footer {
 }
 
 .date-maj {
-    color : #ffffff;
+    color: #ffffff;
+    font-size: 1.2rem;
+    /* met en avant la date de mise à jour */
 }

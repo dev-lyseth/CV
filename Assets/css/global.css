@@ -4,28 +4,30 @@
 @font-face {
     font-family: 'Raleway';
     src: url('../fonts/Raleway-Bold.woff') format('woff'),
-    url('../fonts/Raleway-Bold.otf') format('opentype'),
-    url('../fonts/Raleway-Bold.ttf') format('truetype');
-    font-weight: 700; /* Définit cette version pour le font-weight: 700 */
-    font-style : normal;
+        url('../fonts/Raleway-Bold.otf') format('opentype'),
+        url('../fonts/Raleway-Bold.ttf') format('truetype');
+    font-weight: 700;
+    /* définit cette version pour le font-weight: 700 */
+    font-style: normal;
 }
 
 /* Italic */
 @font-face {
     font-family: 'Raleway';
     src: url('../fonts/Raleway-Italic.woff') format('woff'),
-    url('../fonts/Raleway-Italic.otf') format('opentype'),
-    url('../fonts/Raleway-Italic.ttf') format('truetype');
+        url('../fonts/Raleway-Italic.otf') format('opentype'),
+        url('../fonts/Raleway-Italic.ttf') format('truetype');
     font-weight: 400;
-    font-style: italic; /* Définit cette version pour le font-style: italic */
+    font-style: italic;
+    /* définit cette version pour le font-style: italic */
 }
 
 /* Regular */
 @font-face {
     font-family: 'Raleway';
     src: url('../fonts/Raleway-Regular.woff') format('woff'),
-    url('../fonts/Raleway-Regular.otf') format('opentype'),
-    url('../fonts/Raleway-Regular.ttf') format('truetype');
+        url('../fonts/Raleway-Regular.otf') format('opentype'),
+        url('../fonts/Raleway-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -33,14 +35,16 @@
 
 * {
     box-sizing: border-box;
+    /* inclut marges et bordures dans les dimensions */
 }
 
 body {
     background-color: #f5f5f5;
     margin: 0;
-    font-family: 'Raleway', Arial, sans-serif;
+    font-family: 'Raleway', Helvetica, sans-serif;
     font-weight: 400;
-    font-style: normal; /* Définit la police Raleway-Regular par défaut */
+    font-style: normal;
+    /* définit la police Raleway-Regular par défaut */
     font-size: 100%;
 }
 
@@ -62,10 +66,10 @@ h2 {
     font-size: 1.5rem;
 }
 
-/* Utilisation de Raleway-Bold via @font-face pour respecter les bonnes pratiques 
-tout en maintenant une apparence conforme à la maquette */
+/* utilisation de Raleway-Bold via @font-face pour respecter les bonnes pratiques, 
+maintien d'une apparence conforme à la maquette */
 h3 {
-    font-weight: 700; 
+    font-weight: 700;
     font-size: 0.9rem;
 }
 
@@ -73,4 +77,5 @@ hr {
     border: none;
     height: 1px;
     background-color: rgba(51, 51, 51, 0.2);
+    margin-bottom: 20px;
 }

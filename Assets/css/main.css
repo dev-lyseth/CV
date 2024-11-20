@@ -5,6 +5,13 @@ main {
     background-color: #e3e3e3;
 }
 
+main h2 {
+    margin-bottom: 2px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* colonne de gauche pour les informations personnelles */
 .left-column {
     width: 30%;
     height: 100%;
@@ -14,24 +21,10 @@ main {
     gap: 20px;
 }
 
-.right-column {
-    width: 70%;
-    height: 100%;
-    padding: 2.5rem;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-main h2 {
-    margin-bottom: 2px;
-    font-weight: normal;
-}
-
 .skills {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .skills .core-skills {
@@ -54,7 +47,7 @@ main h2 {
     font-size: 1rem;
 }
 
-/* Utilisation de Raleway-Bold via @font-face pour respecter les bonnes pratiques 
+/* utilisation de Raleway Bold via @font-face pour respecter les bonnes pratiques 
 tout en maintenant une apparence conforme à la maquette */
 .bold {
     font-weight: 700;
@@ -66,9 +59,21 @@ ul {
     list-style-type: square;
 }
 
+/* le style des puces correspond au thème principal (#17abb3) */
 li::marker {
     color: #17abb3;
-    font-size : 1.5rem;
+    font-size: 1.5rem;
+}
+
+/* colonne de droite pour l'expérience et parcours professionnel */
+.right-column {
+    width: 70%;
+    height: 100%;
+    padding: 2.5rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .profile-text p {
@@ -76,13 +81,7 @@ li::marker {
     text-align: justify;
 }
 
-.education {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* style identique pour les 3 parties formations, stages, experiences professionnelles" */
+/* styles identiques pour les 3 parties formations, stages, experiences professionnelles" */
 .entry {
     display: flex;
     align-items: start;
@@ -94,9 +93,10 @@ li::marker {
 
 .title {
     width: 65%;
-    height : 100%;
+    height: 100%;
     flex-wrap: wrap;
 }
+
 .date {
     width: 35%;
     height: 100%;
@@ -104,15 +104,15 @@ li::marker {
 }
 
 h3 {
-   margin: 0;
-   font-weight: 700; 
+    margin: 0;
+    font-weight: 700;
 }
 
-.title p{
+.title p {
     font-style: italic;
-    margin : 0;
+    margin: 0;
     font-size: 0.8rem;
-} 
+}
 
 time,
 strong {
@@ -120,4 +120,3 @@ strong {
     font-weight: normal;
     font-size: 1.1rem;
 }
-

@@ -44,19 +44,20 @@ main h2 {
 .language-skills {
     display: flex;
     flex-direction: column;
-
 }
 
 .language-item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 5px 0;
+    margin: 10px 0;
     font-size: 1rem;
 }
 
+/* Utilisation de Raleway-Bold via @font-face pour respecter les bonnes pratiques 
+tout en maintenant une apparence conforme à la maquette */
 .bold {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 0.9rem;
 }
 
@@ -67,6 +68,7 @@ ul {
 
 li::marker {
     color: #17abb3;
+    font-size : 1.5rem;
 }
 
 .profile-text p {
@@ -105,6 +107,7 @@ h3 {
    margin: 0;
    font-weight: bold; 
 }
+
 .education-title p {
     font-style: italic;
     margin : 0;

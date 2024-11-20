@@ -1,0 +1,123 @@
+main {
+    display: flex;
+    max-width: 1160px;
+    width: 100%;
+    background-color: #e3e3e3;
+}
+
+.left-column {
+    width: 30%;
+    height: 100%;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-column {
+    width: 70%;
+    height: 100%;
+    padding: 2.5rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main h2 {
+    margin-bottom: 2px;
+    font-weight: normal;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills .core-skills {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+    justify-content: space-between;
+}
+
+.language-skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.language-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+/* Utilisation de Raleway-Bold via @font-face pour respecter les bonnes pratiques 
+tout en maintenant une apparence conforme à la maquette */
+.bold {
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+ul {
+    padding-left: 15px;
+    list-style-type: square;
+}
+
+li::marker {
+    color: #17abb3;
+    font-size : 1.5rem;
+}
+
+.profile-text p {
+    text-indent: 20px;
+    text-align: justify;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* style identique pour les 3 parties formations, stages, experiences professionnelles" */
+.entry {
+    display: flex;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.title {
+    width: 65%;
+    height : 100%;
+    flex-wrap: wrap;
+}
+.date {
+    width: 35%;
+    height: 100%;
+    text-align: end;
+}
+
+h3 {
+   margin: 0;
+   font-weight: 700; 
+}
+
+.title p{
+    font-style: italic;
+    margin : 0;
+    font-size: 0.8rem;
+} 
+
+time,
+strong {
+    color: #17abb3;
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+
